@@ -1,4 +1,4 @@
 streamlit
-pyMSAviz
+pymsaviz
 biopython>=1.79
 matplotlib>=3.3.4
