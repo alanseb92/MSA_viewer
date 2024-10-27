@@ -1,4 +1,4 @@
 streamlit
-pyMSAviz==0.5.0
+pyMSAviz
 biopython>=1.79
 matplotlib>=3.3.4
