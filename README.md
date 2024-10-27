@@ -1,1 +1,2 @@
-# MSA_viewer
+# MSAviewer
+MSAviewer
