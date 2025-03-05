@@ -34,7 +34,8 @@ Una aplicación simple en Streamlit para visualizar alineamientos múltiples de 
 
 ## Crea un entorno virtual (opcional pero recomendado):
 python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
+source venv/bin/activate 
+En Windows: venv\Scripts\activate
 
 ## Instala las dependencias:
 pip install -r requirements.txt
