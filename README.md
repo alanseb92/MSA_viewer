@@ -32,7 +32,8 @@ Una aplicación simple en Streamlit para visualizar alineamientos múltiples de 
 - Dependencias listadas en `requirements.txt`
 
 
-## python -m venv venv
+## Crea un entorno virtual (opcional pero recomendado):
+python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 
 ## Instala las dependencias:
