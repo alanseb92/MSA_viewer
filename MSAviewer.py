@@ -1,11 +1,24 @@
 import streamlit as st
 from pymsaviz import MsaViz, get_msa_testdata
+import os
 
 # Título de la aplicación
 st.title("Visualización de MSA con pymsaviz")
 
-# Obtener el archivo de prueba
-msa_file = get_msa_testdata("MRGPRG.fa")
+# Permitir al usuario subir un archivo FASTA
+uploaded_file = st.file_uploader("Sube un archivo FASTA", type=["fa", "fasta"])
+
+# Determinar qué archivo usar
+if uploaded_file is not None:
+    # Guardar el archivo subido temporalmente
+    msa_file = "uploaded_msa.fasta"
+    with open(msa_file, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+    st.success("Archivo cargado con éxito")
+else:
+    # Usar el archivo de prueba por defecto si no se sube nada
+    msa_file = get_msa_testdata("MRGPRG.fa")
+    st.info("Usando archivo de prueba 'MRGPRG.fa' por defecto")
 
 # Crear la visualización con MsaViz
 mv = MsaViz(msa_file, start=1, end=180, wrap_length=60, show_consensus=True)
@@ -42,3 +55,7 @@ with open(fig_path, "rb") as file:
         file_name="api_example03.png",
         mime="image/png"
     )
+
+# Limpiar archivo temporal si se usó uno subido
+if uploaded_file is not None and os.path.exists(msa_file):
+    os.remove(msa_file)
