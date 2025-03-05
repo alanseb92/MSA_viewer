@@ -3,7 +3,7 @@ from pymsaviz import MsaViz, get_msa_testdata
 import os
 
 # Título de la aplicación
-st.title("Visualización de Alineación multiple de secuencia")
+st.title("Alineación multiple de secuencia")
 
 # Permitir al usuario subir un archivo FASTA
 uploaded_file = st.file_uploader("Sube un archivo FASTA", type=["fa", "fasta"])
