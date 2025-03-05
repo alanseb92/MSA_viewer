@@ -5,7 +5,7 @@ from pymsaviz import MsaViz, get_msa_testdata
 st.title("Visualización de MSA con pymsaviz")
 
 # Obtener el archivo de prueba
-msa_file = get_msa_testdata("")
+msa_file = get_msa_testdata("MRGPRG.fa")
 
 # Crear la visualización con MsaViz
 mv = MsaViz(msa_file, start=1, end=180, wrap_length=60, show_consensus=True)
