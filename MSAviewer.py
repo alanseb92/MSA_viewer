@@ -31,14 +31,7 @@ for pos, ident in enumerate(ident_list, 1):
         pos_ident_less_than_50.append(pos)
 
 # Añadir marcadores
-mv.add_markers([1])
-mv.add_markers([color="orange", marker="o")
-mv.add_markers([color="green", marker="+")
-mv.add_markers(pos_ident_less_than_50, marker="x", color="blue")
 
-# Añadir anotaciones de texto
-mv.add_text_annotation("Gap Region", text_color="red", range_color="red")
-mv.add_text_annotation("Gap Region", text_color="green", range_color="green")
 
 # Guardar la visualización como imagen
 fig_path = "api_example03.png"
