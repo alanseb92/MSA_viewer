@@ -1,4 +1,4 @@
-MSA Viewer
+##MSA Viewer
 Una aplicación simple en Streamlit para visualizar alineamientos múltiples de secuencias (MSA) en formato FASTA utilizando la librería pymsaviz. Permite cargar un archivo FASTA y muestra una visualización estática con opciones de descarga.
 
 Características
