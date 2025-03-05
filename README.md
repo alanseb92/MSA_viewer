@@ -31,17 +31,11 @@ Una aplicación simple en Streamlit para visualizar alineamientos múltiples de 
 - Python 3.7 o superior
 - Dependencias listadas en `requirements.txt`
 
-## Instalación
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu_usuario/msa-viewer.git
-   cd msa-viewer
-Crea un entorno virtual (opcional pero recomendado):
 
-python -m venv venv
+##python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 
-Instala las dependencias:
+##Instala las dependencias:
 pip install -r requirements.txt
 
 
